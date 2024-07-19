@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Random Password Generator</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-black text-white h-screen flex items-center justify-center">
+  <div class="text-center">
+    <div class="bg-gray-600 p-6 rounded-lg">
+      <div class="flex justify-center mb-4">
+        <img src="images/Background_Remove.png" alt="Robot Icon" class="h-20 w-20">
+      </div>
+      <h1 class="text-center font-bold bg-green-500 rounded-xl py-2 px-4 mb-4">Random Password Generator</h1>
+      <p class="mt-2">Secure, Strong and Unique passwords to keep your accounts safe online</p>
+      <div class="flex items-center bg-gray-700 p-2 rounded mt-4">
+        <input type="text" value="Password" readonly class="bg-transparent text-center w-full text-white focus:outline-none">
+        <button class="bg-green-500 text-white py-1 px-3 rounded ml-2">Copy</button>
+      </div>
+      <button class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded mt-4">Generate</button>
+      <div class=" flex justify-around mt-2 bg-black text-white border-2 p-4 rounded-lg">
+        <div class="p-4 items-center mb-2">
+            <label for="length" class=" bg-green-600 px-4 py-2  rounded-xl text-white">Password Length (6-64)</label>
+            <div class="flex mt-4">
+                <label class="ml-2 bg-white  rounded-full px-3 text-black text-center rounded-full">20</label>
+                <input type="range" id="length" class=" ml-4   w-full" min="6 " max="64" value="36">                    
+            </div>
+            <div class="mt-4 p-2">
+                <select class="text-black font-medium rounded-full py-2 px-2 hover:bg-green-400" >
+                    <option>Quick Options</option>
+                    <option>Quick Options 1</option>
+                </select>
+            </div>                    
+        </div>    
+        <div class="p-2 items-center">
+            <label class="flex items-center mr-4 mb-2">
+                <input type="checkbox"  class="form-checkbox mr-2">
+                 Uppercase (ABC)
+            </label>
+            <label class="flex items-center mr-4 mb-2">
+                <input type="checkbox"  class="form-checkbox mr-2">
+                 Lowercase (abc)
+            </label>
+            <label class="flex items-center mr-4 mb-2">
+                <input type="checkbox"  class="form-checkbox mr-2">
+                 Numbers (123)
+            </label>
+            <label class="flex items-center mb-2">
+                <input type="checkbox"  class="form-checkbox mr-2">
+                 Characters (#&)
+        </label>
+        </div>
+    </div>
+</div>
+</body>
+</html>
